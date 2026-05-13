@@ -33,6 +33,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeEffect();
 
+    /* ================= PROJECT LINK EFFECT ================= */
+
+    const projectButtons = document.querySelectorAll("#projects .btn");
+
+    projectButtons.forEach(button => {
+        button.addEventListener("click", function () {
+
+            button.style.transform = "scale(0.95)";
+
+            setTimeout(() => {
+                button.style.transform = "scale(1)";
+            }, 150);
+
+        });
+    });
 
     /* ================= EMAILJS CONTACT FORM ================= */
 
